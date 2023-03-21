@@ -1,15 +1,20 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer/itemListContainer';
-import Navbar from './components/Navbar/navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/Navbar/navbar';
+import ContainerCardItems from './components/Item/ContainerCardItems';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DetailsItem from './components/Item/DetailsItem';
 
 function App() {
 
   return (
-    <div className="App">
-      <Navbar/>
-      <ItemListContainer texto=' Luciano'/>
-    </div>
+    <BrowserRouter>
+      <NavBar/>
+        <Routes>
+          <Route path='/'  element= { <ContainerCardItems/> }/>
+          <Route path='/item/:idItem' element= { <DetailsItem/> }/>
+          <Route path='/category/:idCategory' element= { <ContainerCardItems/> }/>
+        </Routes>
+    </BrowserRouter>
   );
 };
 

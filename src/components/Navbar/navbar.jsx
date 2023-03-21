@@ -1,25 +1,29 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Cartwidget from './cartwidget';
+import Brand from "./Brand";
+import ItemListContainer from "./ItemListContainer";
+import CartWidget from "./CartWidget";
 
-function navbarReact() {
-  return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container display="flex">
-          <Navbar.Brand href="#home">TodoMangas</Navbar.Brand>
-          <Nav className="mx-auto px-5">
-            <Nav.Link className="px-5" href="#home">Inicio</Nav.Link>
-            <Nav.Link className="px-5" href="#features">Manga</Nav.Link>
-            <Nav.Link className="px-5" href="#pricing">Comics</Nav.Link>
-            <Nav.Link className="px-5" href="#contact">Contacto</Nav.Link>
-            <Nav.Link className="px-5" href="#cartwidget"><Cartwidget/></Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
-  );
+const NavBar = () => {
+
+    return (
+        <header>
+            <div className="containerBrand">
+                <Brand />
+            </div>
+
+            <nav className="containerItemList">
+                <ItemListContainer 
+                    itemUno = "Mangas"
+                    itemDos = "Comics"
+                    itemTres = "Nacional"
+                    itemCuatro = "Novelas"
+                />
+            </nav>
+
+            <div className="containerCart">
+                <CartWidget />
+            </div>
+        </header>
+    )
 }
 
-export default navbarReact;
+export default NavBar;
