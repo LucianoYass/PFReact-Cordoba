@@ -30,6 +30,7 @@ const ContainerCardItems = () => {
                         id = {product.id}
                         imagen = {product.imageProduct.firstImage}
                         title = {product.title}
+                        cantidad= {product.stock}
                         precio = {product.price}
                     />
                 ))

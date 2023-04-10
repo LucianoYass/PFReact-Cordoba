@@ -59,6 +59,7 @@ header .containerCart{
     color: white;
 }
 
-.cart {
+.cartLogo {
     font-size: 25px;
+    cursor: pointer;
 }

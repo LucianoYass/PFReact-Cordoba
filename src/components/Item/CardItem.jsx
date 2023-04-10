@@ -13,6 +13,7 @@ const CardItem = (props) => {
                 />
             <Description
                 title={props.title}
+                cantidad = {props.cantidad}
                 precio = {props.precio}
                 />
 
