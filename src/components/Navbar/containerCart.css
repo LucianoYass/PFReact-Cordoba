@@ -30,6 +30,15 @@
     justify-content: center;
     align-items: center;
     background: none;
+    cursor: pointer;
+}
+
+.cart .TerminarCompra .terminar:hover {
+    background-color: #4c00d1;
+}
+
+.cart .TerminarCompra .limpiar:hover {
+    background-color: #4c00d1;
 }
 
 .cart .containerItemsCart {
@@ -79,6 +88,7 @@
     border-radius: 50px;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .cart .TerminarCompra .limpiar {
@@ -90,4 +100,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    color: white;
 }

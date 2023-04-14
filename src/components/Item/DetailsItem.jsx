@@ -33,6 +33,7 @@ const DetailsItem = () => {
                             <Description
                                 title= {items.title}
                                 parrafo= {items.description}
+                                cantidad = {items.stock}
                                 precio= {items.price}
                             />
                             <div className="buttons">

@@ -27,11 +27,11 @@ const ProviderContextCart = ({children}) => {
                 }
 
                 add = false;
-                break;
+                break
             }
-
-            add && setListCart([...productKeep, {...productAdd, quantity : 1}])
         }
+
+        add && setListCart([...productKeep, {...productAdd, quantity : 1}])
     }
 
     const clearCart = () => {

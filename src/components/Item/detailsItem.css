@@ -127,4 +127,9 @@
     color: white;
     border: none;
     font-size: 21px;
+    cursor: pointer;
+}
+
+.detailsItem .containerRight .buttons #detalles:hover{
+    background-color: #4c00d1;
 }
